@@ -15,7 +15,7 @@
 
 !PLAYERKNOCKBACK = 0				; Use a knockback effect on player injury
 !SMALLPLAYERS = 1					; Allow players to have the "small mario" state
-!SEPERATEGFX = 0					; Use seperate graphics for players 1 and 2.
+!SEPERATEGFX = 1					; Use seperate graphics for players 1 and 2.
 
 org $009322
 autoclean JML EverySingleFrame			;primary hijack - label found in prepstuff.asm
@@ -71,3 +71,21 @@ if !SEPERATEGFX && !!THREEPLAYER
 	incbin graphics/seperate_2p.bin
 	print "Used ",bytes," bytes for that"
 endif	
+
+ORG $00D062
+RTS
+ORG $00D062 : LDA $19 : BRA $1B
+
+org $00D909
+db $00
+
+header
+lorom
+
+org $00D676
+LDA #$00
+
+org $00D805
+CPX #$FF
+
+org $00DBB0 : db $80
