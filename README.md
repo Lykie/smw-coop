@@ -20,3 +20,4 @@ I disabled some things that player 1 has that I didn't think was really useful.
 - No longer able to punch the chain fence (looked buggy)
 - Player 1 doesn't float after letting go of B button with cape (Player 2 doesn't have it)
 - Flying is disabled (buggy)
+- Different Luigi graphics from the original (swimming/run jump sprites were broken)
