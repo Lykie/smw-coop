@@ -11,11 +11,12 @@ coop.smc)
 - Click the save button in the Palette Editor
 - Run the following, in the project root: `<path to asar> co-op.asm rom/coop.smc`
 - Bam.
+
 Forker's note
 -------------
 This is not really a continuation of this, more of breaking it if anything.
 I disabled some things that player 1 has that I didn't think was really useful.
 
--No longer able to punch the chain fence (looked buggy)
--Player 1 doesn't float after letting go of B button with cape (Player 2 doesn't have it)
--Flying is disabled (buggy)
+- No longer able to punch the chain fence (looked buggy)
+- Player 1 doesn't float after letting go of B button with cape (Player 2 doesn't have it)
+- Flying is disabled (buggy)
